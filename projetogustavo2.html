@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+    
+    }
+    .logoNike{
+      width: 80px;
+    }
+    .filho02 {
+      width: 500px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+      .filho02 p {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #333333;
+        
+      }
+      .input {
+        width: 180px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        padding: 12px;
+      }
+
+      .title-mkt {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 40px;
+        display: flex; 
+      }
+      .title-mkt .title-mkt__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-weight: bolder;
+      }
+      .description {
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        line-height: 120%;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 16px;
+
+      }
+      .button {
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 14px;
+        background: #000000;
+        font-weight: 600;
+        border: 0;
+        border-radius: 40px;
+        margin-bottom: 40px;
+      }
+      .obs {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        line-height: 150%;
+        font-weight: 400;
+        color: #97948b;
+
+      }
+
+  </style>
+
+  <div class="container">
+    <div class="header">
+
+      <img 
+       src="data:image/png;base64,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" 
+       alt="logo nike"
+       class="logoNike" 
+     />
+      
+       
+      <div class="filho02">
+        <p>Lancamentos</p>
+  
+        <p>Feminino</p>
+  
+        <p>Masculino</p>
+  
+        <p>Infantil</p>
+  
+        <p>Snkrs</p>
+  
+        <p>Ofertas</p>
+      </div>
+  
+      <input 
+       type="text"
+       placeholder="o que você procura?"
+       class="input"
+      />
+    </div>
+
+    <section class="title-mkt">
+      <div class="title-mkt__text">
+        <h1 class="title">15% off Adicional</h1>
+        <p class="description">
+          Aproveite o melhor do esporte usando o cupom* ELAS15 no carrinho e 
+          ganhe 15% de desconto adicional na compra de qualquer roupa** feminina 
+          já em oferta.
+        </p>
+
+        <button class="button">Ver Produtos</button>
+
+        <span class="obs">
+          *Cupom válido até as 23:59 do dia 22/06 <br />
+          **Válido somente para produtos classificados como "Roupas". Preços "De"
+          diferente de "Por"
+        </span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+

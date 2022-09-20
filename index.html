@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+   .cabecalho {
+     width: 100%; 
+     height: 70px; 
+     display: flex;
+     justify-content: center;
+     background: #121632;
+    }
+   .content {
+     width: 100%;
+     max-width: 1110px;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    }
+    .img {
+      width: 192px;
+    }
+   .list {
+     display: flex;
+     list-style: none;
+     gap: 0 32px;
+    }
+    .list li {
+      color: #8C4CF5;
+      font-size: 14px;
+      cursor: pointer ;
+    }
+    .principal {
+      width: 100%;
+    }
+    section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+    }
+    section.intro-home {
+      background: #121632;
+    }
+    .content-intro-home {
+      width: 100%;
+      max-width: 1110px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 166px 0 135px;
+      position: relative;
+    }
+    .box-text {
+      width: 100%;
+      max-width: 540px;
+
+    }
+    .box-text h1 {
+      font-size: 48px;
+      line-height: 78px;
+      font-weight: 800;
+      color: #8C4CF5;
+      margin-bottom: 16px;
+
+    }
+    .box-text p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    .box-text .box-button {
+      width: 200px;
+      height: 60px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+
+    }
+    .box-text .box-button button {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #DD226D;
+      color: #ffffff;
+      border-radius: 6px;
+      font-size: 16px;
+      border: 0;
+      cursor: pointer;
+    }
+    .box-text .box-button img {
+      width: 12.95px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+
+    
+    img {
+      width: 552.63px;
+      margin-right: -60px;
+    }
+    .arrow {
+      position: absolute;
+    }
+    .arrow-1, .arrow-2 {
+      width: 36.05px;
+    }
+    .arrow-1 {
+      top: 158.11px;
+      left: -48.18px;
+    }
+    .arrow-2 {
+      bottom: 95.06px;
+
+    }
+    .arrow-3, .arrow-4 {
+      width: 88.93px;
+    }
+    .arrow-3 {
+      top: 44.25px;
+      right: 436px;
+    }
+    .arrow-4 {
+      bottom: 24.16px;
+      right: -16px;
+    }
+    
+    
+  </style>
+
+  <header class="cabecalho">
+    <div class="content">
+      <img src="./image/logo.png" alt="img" class="img"/>
+
+      <ul class="list">
+        <li>Produto</li>
+        <li>Parcerias</li>
+        <li>Vantagens </li>
+        <li>Processo</li>
+        <li>Fale conosco</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="principal">
+    <section class="intro-home">
+      <div class="content-intro-home">
+        <div class="box-text">
+          <h1>
+            Desenvolvedores de software de elite
+            sob demanda 
+          </h1>
+
+          <p>
+            A maneira mais inteligente possível de adquirir uma equipe distribuida de alto desempenho.
+          </p>
+
+          <div class="box-button">
+            <button>Vamos Conversar</button>
+            <img src="./image/vector.png" alt="">
+          </div>
+         
+        </div>
+
+        <img src="./image/image-intro.png" alt="">
+
+        <img src="./image/arrow-1.png" class="arrow arrow-1">
+        <img src="./image/arrow-2.png" class="arrow arrow-2">
+        <img src="./image/arrow-3.png" class="arrow arrow-3">
+        <img src="./image/arrow-4.png" class="arrow arrow-4">
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
+
+
